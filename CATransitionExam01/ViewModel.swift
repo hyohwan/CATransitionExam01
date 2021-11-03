@@ -8,12 +8,13 @@
 import UIKit
 
 class ViewModel {
+    
     enum Direction {
         case none
         case prev, next
     }
+    
     let current = Dynamic(0)
-//    var last: Int = 0
     
     var circularPrev: Int {
         let prev = current.value - 1
@@ -35,11 +36,7 @@ class ViewModel {
         Page(title: "Page 05", decsription: "fifth page", bgColor: .blue, titleColor: .white),
         Page(title: "Page 06", decsription: "sixth page", bgColor: .purple, titleColor: .white),
     ]
-//    func setPage(_ current: Int, direction: Direction) {
-//        self.direction = direction
-////        self.last = self.current.value
-//        self.current.value = current
-//    }
+    
     func setPage(direction: Direction) {
         self.direction = direction
         switch direction {
