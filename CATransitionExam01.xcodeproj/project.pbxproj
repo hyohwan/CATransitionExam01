@@ -13,6 +13,8 @@
 		9D4FA44627321FE000344C69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4FA44427321FE000344C69 /* Main.storyboard */; };
 		9D4FA44827321FE700344C69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D4FA44727321FE700344C69 /* Assets.xcassets */; };
 		9D4FA44B27321FE700344C69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4FA44927321FE700344C69 /* LaunchScreen.storyboard */; };
+		9D4FA4532732490500344C69 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4FA4522732490500344C69 /* ViewModel.swift */; };
+		9D4FA4552732540A00344C69 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4FA4542732540A00344C69 /* Dynamic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9D4FA44727321FE700344C69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D4FA44A27321FE700344C69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D4FA44C27321FE700344C69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D4FA4522732490500344C69 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		9D4FA4542732540A00344C69 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				9D4FA43E27321FE000344C69 /* AppDelegate.swift */,
 				9D4FA44027321FE000344C69 /* SceneDelegate.swift */,
 				9D4FA44227321FE000344C69 /* ViewController.swift */,
+				9D4FA4522732490500344C69 /* ViewModel.swift */,
+				9D4FA4542732540A00344C69 /* Dynamic.swift */,
 				9D4FA44427321FE000344C69 /* Main.storyboard */,
 				9D4FA44727321FE700344C69 /* Assets.xcassets */,
 				9D4FA44927321FE700344C69 /* LaunchScreen.storyboard */,
@@ -139,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D4FA44327321FE000344C69 /* ViewController.swift in Sources */,
+				9D4FA4552732540A00344C69 /* Dynamic.swift in Sources */,
 				9D4FA43F27321FE000344C69 /* AppDelegate.swift in Sources */,
+				9D4FA4532732490500344C69 /* ViewModel.swift in Sources */,
 				9D4FA44127321FE000344C69 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,9 +295,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LY52FTQ557;
+				DEVELOPMENT_TEAM = B23RT9FP44;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CATransitionExam01/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -297,6 +306,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +314,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hyohwan.CATransitionExam01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,9 +326,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LY52FTQ557;
+				DEVELOPMENT_TEAM = B23RT9FP44;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CATransitionExam01/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -325,6 +337,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,6 +345,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hyohwan.CATransitionExam01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
